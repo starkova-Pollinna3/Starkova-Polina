@@ -18,3 +18,9 @@ console.log(edge**2);
 let surfaceSquare=6*edge**2;
 console.log(surfaceSquare);
 console.log(edge**3);
+
+const distance = 400;
+  time = 20;
+  speed1 = 70;
+  speed2 = 80;
+alert("между автомобилями " + (distance - time * (speed1 + speed2)) + " км");
