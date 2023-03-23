@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>аудио</title>
+    
+</head>
+<body>
+<audio id="audio" src="https://cdn1.deliciouspears.com/load/690075563/BTS_-_FAKE_LOVE_(musmore.com).mp3" controls></audio> 
+
+<button id="play">Play</button>
+<button id="pause">Pause</button>
+<script>
+        let audio = document.getElementById(id="audio"); 
+        let playButton = document.getElementById("play");
+        let pauseButton = document.getElementById("pause"); 
+        let delay = Math.random()*10000
+
+        let play = () => audio.play(); 
+        let pause = () => DelayedPause(); 
+
+         playButton.addEventListener("click", play); 
+         pauseButton.addEventListener("click", pause);
+
+         async function DelayedPause() {
+            let promise = new Promise((resolve, reject) => { 
+                setTimeout(() => audio.pause(), delay)
+            });
+            await promise 
+         }  
+</script>
+</body>
+</html>
