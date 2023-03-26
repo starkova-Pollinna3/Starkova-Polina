@@ -19,7 +19,7 @@ let surfaceSquare=6*edge**2;
 console.log(surfaceSquare);
 console.log(edge**3);
 
-const distance = 400;
+const distance = 400;;
   time = 20;
   speed1 = 70;
   speed2 = 80;
